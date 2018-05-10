@@ -99,7 +99,12 @@ on post-fs-data
 
     mkdir /data/diag_logs 0777 system system
 
-service logcat_debug /system/bin/logcat -b all -f /cache/logcat1_LOS15.txt -v threadtime
+service logcat_debug /system/bin/logcat -b all -f /cache/logcat_main_LOS15.txt -v threadtime
+    class main
+    user root
+    group system
+    
+service radiolog_debug /system/bin/logcat -b radio -f /cache/locgcat_radio_LOS15.txt -v threadtime
     class main
     user root
     group system
