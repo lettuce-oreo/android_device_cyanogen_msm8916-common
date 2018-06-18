@@ -93,7 +93,7 @@ on property:init.svc.recovery=running
 
 on property:dev.bootcomplete=1
     trigger enable-low-power
-    setprop sys.io.scheduler cfq
+    setprop sys.io.scheduler "cfq"
     
     # Set read_ahead value to 2MB
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
