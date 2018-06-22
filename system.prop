@@ -36,6 +36,9 @@ persist.hwc.ptor.enable=true
 debug.enable.sglscale=1
 ro.opengles.version=196608
 
+# Healthd
+ro.enable_boot_charger_mode=1
+
 # Media
 persist.media.treble_omx=false
 drm.service.enabled=1
